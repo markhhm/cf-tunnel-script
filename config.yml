@@ -1,0 +1,10 @@
+# This file need to place on remote server, which is in your private network
+# REF below link
+# https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/tunnel-guide/local/
+tunnel: YOUR TUNNEL ID
+credentials-file: YOUR TUNNEL CREDENTIALS WHICH FORMAT IS JSON
+
+ingress:
+  - hostname: YOUR TUNNEL HOSTNAME
+    service: YOUR SERVICE, ex. 'rdp://localhost:3389'
+  - service: http_status:404
